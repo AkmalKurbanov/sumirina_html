@@ -1,2 +1,7 @@
 @import "mixins/fontface";
-@include font-face("fonts", "../fonts/fonts-name/fonts-Regular/fonts-Regular");
+@include font-face("RobotoRegular", "../fonts/Roboto/Roboto-Regular/Roboto-Regular");
+@include font-face("RobotoLight", "../fonts/Roboto/Roboto-Light/Roboto-Light", 300);
+@include font-face("RobotoMedium", "../fonts/Roboto/Roboto-Medium/Roboto-Medium", 500);
+@include font-face("RobotoBold", "../fonts/Roboto/Roboto-Bold/Roboto-Bold", 700);
+@include font-face("RobotoCondensedRegular", "../fonts/Roboto/RobotoCondensed-Regular/RobotoCondensed-Regular");
+@include font-face("SitkaBold", "../fonts/Sitka/SitkaB/SitkaSmall-Bold", 700);

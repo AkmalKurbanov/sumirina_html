@@ -1,4 +1,4 @@
-$icon-font-path: '../fonts/';
+@import "../fonts/icon/css/icon.css";
 
 // Required bootstrap don't touch
 @import "./bower_components/bootstrap4/scss/functions";
@@ -20,3 +20,10 @@ $icon-font-path: '../fonts/';
 // End variables
 // help styles
 
+
+
+@import "_helper";
+@import "_header";
+@import "_intro";
+
+@import "_footer";
