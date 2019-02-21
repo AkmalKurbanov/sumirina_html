@@ -21,3 +21,37 @@ body {
 }
 
 // flex footer end
+
+
+
+// flex vertical
+.flexVertical {
+  display: flex;
+  align-items: center;
+}
+
+// flex verticalend
+
+// flex vertical
+// .flexHorizontalEnd {
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+// }
+
+// flex verticalend
+
+
+a {
+  transition: all .3s;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+:before,
+:after {
+  position: absolute;
+  content: '';
+}

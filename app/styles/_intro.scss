@@ -15,15 +15,34 @@
   }
 
   &__bgImg {
-    position: relative;
-
-    &:before {
-      position: absolute;
-      content: '';
-      right: 0;
-      max-width: 600px;
-      min-height: 600px;
+    min-height: 600px;
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    img,
+    svg {
       width: 100%;
+      max-width: 100%;
+    }
+
+    svg {
+      path {
+        fill: $sc;
+      }
+    }
+
+    &--behind {
+      min-height: 775px;
+      max-width: 780px;
+      z-index: 0;
+      svg {
+        path {
+          fill: rgba(255, 255, 255, 0.11);
+        }
+      }
     }
   }
 }
