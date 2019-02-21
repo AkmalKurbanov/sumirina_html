@@ -1,60 +1,240 @@
 .header {
   padding: 40px 0;
   z-index: 1;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 0;
+
+  @media (max-width: 1199.98px) {
+    padding: 20px 0;
+  }
+
+  @media (max-width: 991.98px) {
+    padding: 10px 0;
+  }
 
   &__logo {
     max-width: 270px;
     width: 100%;
 
+    @media (max-width: 575.98px) {
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 399.98px) {
+      max-width: 210px;
+    }
+
+
     img {
       width: 100%;
       max-width: 100%;
     }
+
+    svg {
+      .cls-1 {
+        font-size: 168.78px;
+        fill: #ffc744;
+        font-family: AbrilDisplay-BoldItalic, AbrilDisplay BoldItalic;
+        letter-spacing: -0.01em;
+      }
+
+      .cls-2,
+      .cls-3,
+      .cls-4 {
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-5,
+      .cls-6 {
+        fill: #fff;
+        font-family: AbrilDisplay-Regular, AbrilDisplay Regular;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -0.01em;
+      }
+
+    }
+  }
+
+  .mobileMnu-js {
+    top: 0;
   }
 
   &__mnu {
+    transition: $trn;
+
+    @media (max-width: 767.98px) {
+      margin-top: 15px;
+    }
+
+    @media (max-width: 575.98px) {
+      position: fixed;
+      width: 100%;
+      max-width: 100%;
+      min-height: 100vh;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: -100%;
+      z-index: 9;
+
+      &:before {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(46, 102, 187, 0.5);
+      }
+    }
+
     ul {
       display: flex;
-      justify-content: flex-end;
-      flex-direction: row;
+      justify-content: space-around;
+      min-height: 25px;
+      align-items: flex-end;
+
+      @media (max-width: 767.98px) {
+        justify-content: space-between;
+      }
+
+      @media (max-width: 575.98px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  &__item {
+    line-height: normal;
+    display: flex;
+
+    @media (max-width: 575.98px) {
+      margin-bottom: 10px;
+      min-height: 20px;
+    }
+
+    &:last-child {
       margin: 0;
-      padding: 0;
-      align-items: center;
+    }
+  }
 
-      li {
-        list-style-type: none;
-        margin-right: 55px;
+  &__link {
+    text-transform: uppercase;
+    font-family: $rc;
+    color: $wc;
+    display: inline-block;
+    overflow: hidden;
 
-        &:last-child {
-          margin-right: 0;
-        }
+    @media (max-width: 1199.98px) {
+      font-size: 14px;
+    }
 
-        a {
-          text-transform: uppercase;
-          color: #ffffff;
-          font-family: $rc;
-          position: relative;
+    @media (max-width: 991.98px) {
+      font-size: 13px;
+    }
 
-          &:hover {
-            color: $sc;
+    @media (max-width: 575.98px) {
+      font-size: 16px;
+    }
 
-            &:before {
-              width: 100%;
-              transform: rotate(0);
-            }
-          }
+    span {
+      height: 20px;
+      display: inline-block;
+      position: relative;
+      transition: transform 500ms;
 
-          &:before {
-            min-height: 2px;
-            transition: $trn;
-            // transition: all 1s;
-            background-color: $sc;
-            bottom: -3px;
-            left: 0;
-            transform: rotate(15deg);
-            transform-origin: left;
-          }
+      &:after {
+        content: attr(data-hover);
+        position: absolute;
+        top: -100%;
+        left: 0;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      span {
+        transform: translateY(20px);
+        color: $sc;
+      }
+    }
+  }
+
+  &__order {
+    @keyframes shine {
+      to {
+        left: 125%
+      }
+    }
+
+    a {
+      transition: $trn;
+      min-height: 43px;
+      border: 1px solid $wc;
+      width: 100%;
+      max-width: 100%;
+      color: $wc;
+      text-transform: uppercase;
+      font-family: $rc;
+      font-weight: 400;
+      position: relative;
+      overflow: hidden;
+
+      @media (max-width: 1199.98px) {
+        font-size: 14px;
+        min-height: 35px;
+      }
+
+      @media (max-width: 991.98px) {
+        min-height: 30px;
+        font-size: 13px;
+      }
+
+      @media (max-width: 767.98px) {
+        font-size: 11px;
+        min-height: 25px;
+      }
+
+      @media (max-width: 575.98px) {
+        min-height: 40px;
+        max-width: 250px;
+        margin: auto;
+        font-size: 16px;
+      }
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: -75%;
+        z-index: 2;
+        display: block;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .3));
+        transform: skewX(-25deg);
+      }
+
+      &:hover {
+        &:before {
+          animation: shine .9s;
         }
       }
     }

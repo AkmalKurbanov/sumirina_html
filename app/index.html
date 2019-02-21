@@ -28,6 +28,7 @@
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
     <div class="content">
 
       <!-- intro -->
-      <section class="intro parallax-window" data-parallax="scroll" data-image-src="images/header/headerSectionPattern.png">
+      <section class="intro">
         <div class="intro__bgImg">
           <svg viewBox="0 0 1852.71 1896">
             <g>
@@ -62,39 +63,99 @@
             </g>
           </svg>
         </div>
+
         <!-- header -->
         <header class="header">
+
+          <!-- hamburger -->
+          <div class="hamburger">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </div>
+          <!-- hamburger end -->
+
           <div class="container">
             <div class="row flexVertical">
-              <div class="col-lg-4">
+              <div class="col-xl-4 col-lg-3 col-md-3 col-sm-6">
                 <div class="header__logo">
                   <a href="#">
-                    <img src="images/logo.svg" alt="logo">
+                    <svg viewBox="0 0 939.25 183.46">
+                      <g>
+                        <text class="cls-1" transform="translate(0 141.27)">
+                          <tspan class="cls-2">sumi</tspan>
+                          <tspan class="cls-3" x="336.04" y="0">r</tspan>
+                          <tspan class="cls-4" x="390.89" y="0">ina.</tspan>
+                          <tspan class="cls-5" x="636.29" y="0">c</tspan>
+                          <tspan class="cls-6" x="709.2" y="0">om</tspan>
+                        </text>
+                      </g>
+                    </svg>
                   </a>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="header__mnu">
-                  <ul>
-                    <li><a href="#"><span data-hover>репатриация</span></a></li>
-                    <li><a href="#"><span data-hover>услуги</span></a></li>
-                    <li><a href="#"><span data-hover>отзывы</span></a></li>
-                    <li><a href="#"><span data-hover>контакты</span></a></li>
-                  </ul>
+              <div class="col-lg-2 col-md-3 col-sm-5 order-md-last">
+                <div class="header__order">
+                  <a data-scroll class="flexVertical" href="#contacts">оставить заявку</a>
                 </div>
               </div>
-              <div class="col-lg-2">
-                <div class="header__order">
-                  <a href="#">dsfds</a>
+              <div class="col-xl-6 col-lg-7 col-md-6 col-sm-12">
+                <div class="header__mnu mnu-js">
+                  <ul>
+                    <li class="header__item"><a class="header__link" href="#repatriation"><span data-hover="репатриация"
+                          data-scroll>репатриация</span></a></li>
+                    <li class="header__item"><a class="header__link" href="#services"><span data-hover="услуги"
+                          data-scroll>услуги</span></a></li>
+                    <li class="header__item"><a class="header__link" href="#reviews"><span data-hover="отзывы"
+                          data-scroll>отзывы</span></a></li>
+                    <li class="header__item"><a class="header__link" href="#contacts"><span data-hover="контакты"
+                          data-scroll>контакты</span></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </header>
         <!-- header end -->
+        <div class="container">
+          <!-- <div class="intro__contentWrap"> -->
+          <div class="intro__descWrap">
+            <h1 class="intro__caption">Хотите жить в Израиле?</h1>
+            <p class="desc">Стране неограниченных возможностей? У Вас есть еврейские корни? Тогда мои услуги - для
+              вас!
+              Вся
+              необходимая информация для удачного и комфортного Возвращения на Родину.</p>
+          </div>
+          <div class="intro__count">
+            <div class="intro__countItem">
+              <p class="count-js">165</p>
+              <span>репатрианта</span>
+            </div>
+            <div class="intro__countItem">
+              <p class="count-js">8</p>
+              <span>лет на рынке</span>
+            </div>
+            <div class="intro__countItem">
+              <p class="count-js">248</p>
+              <span>найденных документа</span>
+            </div>
+          </div>
+
+
+          <!-- </div> -->
+        </div>
 
       </section>
       <!-- intro end -->
+
+      <!-- target -->
+      <section class="target indent">
+        <div class="container">
+
+        </div>
+      </section>
+      <!-- target end -->
+
     </div>
     <!-- content end -->
 
@@ -114,7 +175,6 @@
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
-  <script src="/bower_components/parallax.js/parallax.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

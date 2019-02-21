@@ -2,8 +2,13 @@
   background-color: $mc;
   min-height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 
   &:before {
+    background-attachment: fixed;
     position: absolute;
     content: '';
     top: 0;
@@ -18,10 +23,11 @@
     min-height: 600px;
     max-width: 600px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 0;
+
     img,
     svg {
       width: 100%;
@@ -37,12 +43,63 @@
     &--behind {
       min-height: 775px;
       max-width: 780px;
-      z-index: 0;
+      z-index: 1;
+
       svg {
         path {
           fill: rgba(255, 255, 255, 0.11);
         }
       }
+    }
+  }
+
+  // &__contentWrap {
+  //   height: 100%;
+  //   position: relative;
+  // }
+
+  &__descWrap {
+    max-width: 27%;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__caption {
+    margin: 0;
+    color: $wc;
+    font-size: 70px;
+    font-family: $skb;
+    line-height: 75px;
+    text-shadow: 0px 3px 7px rgba(21, 54, 103, 0.34);
+    margin-bottom: 30px;
+  }
+
+  &__count {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 45px;
+    width: 100%;
+    max-width: 27%;
+  }
+
+  &__countItem {
+    text-align: center;
+    color: $wc;
+    text-transform: uppercase;
+
+    p {
+      font-family: $rb;
+      font-size: 90px;
+      margin: 0;
+      line-height: 90px;
+    }
+
+    span {
+      font-family: $rc;
     }
   }
 }

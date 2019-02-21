@@ -28,6 +28,7 @@ body {
 .flexVertical {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 // flex verticalend
@@ -54,4 +55,53 @@ a {
 :after {
   position: absolute;
   content: '';
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+
+// indent
+.indent {
+  margin-bottom: 50px;
+
+  @media (max-width: 1199.98px) {
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: 991.98px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 30px;
+  }
+}
+
+// indent end
+
+
+// desc
+.desc {
+  color: $wc;
+  line-height: 1.5;
+  font-family: $rr;
+  margin: 0;
+}
+
+// desc end
+
+section {
+  z-index: 3;
+  position: relative;
 }
