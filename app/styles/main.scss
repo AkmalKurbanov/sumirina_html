@@ -1,0 +1,22 @@
+$icon-font-path: '../fonts/';
+
+// Required bootstrap don't touch
+@import "./bower_components/bootstrap4/scss/functions";
+@import "./bower_components/bootstrap4/scss/variables";
+@import "./bower_components/bootstrap4/scss/mixins";
+@import "./bower_components/bootstrap4/scss/nav";
+// End bootstrap
+// Optional bootstrap
+@import "./bower_components/bootstrap4/scss/reboot";
+@import "./bower_components/bootstrap4/scss/grid";
+// End optional
+// optional ember-burger-menu
+// optional end
+// Fonts
+@import "_fonts";
+// End Fonts
+//  Custom variables
+@import "_vars";
+// End variables
+// help styles
+
