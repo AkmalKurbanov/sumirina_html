@@ -18,6 +18,7 @@
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -43,144 +44,237 @@
 
     <!-- content -->
     <div class="content">
+      <!-- header -->
+      <header class="header wow fadeInDown">
 
-      <!-- intro -->
-      <section class="intro">
-        <div class="intro__bgImg">
-          <svg viewBox="0 0 1852.71 1896">
-            <g>
-              <path d="M1852.71,1705.08C1080,1480.15,477.67,805.7,365.45,0H0Q12,100.49,32.71,200A2394.63,2394.63,0,0,0,172.88,646.12a2475.79,2475.79,0,0,0,221.75,409.2,2515.44,2515.44,0,0,0,294.1,361.06,2498.87,2498.87,0,0,0,357.7,301.69A2450.72,2450.72,0,0,0,1346.58,1896h506.13Z" />
-              <path d="M1436,767.25C1193.13,544.29,1033.47,266,991,0H624.8a1346.18,1346.18,0,0,0,33.32,180.56C684.5,284,723.51,387.73,774.05,488.85c49.46,99,110.1,195.68,180.23,287.5a1999.17,1999.17,0,0,0,236.3,258.16,2087.76,2087.76,0,0,0,285.36,219.62,2077.58,2077.58,0,0,0,327.88,170.93q24.32,10,48.9,19.4V1050.56C1703,978.49,1562.49,883.42,1436,767.25Z" />
-              <path d="M1661.45,0H1273.17q2.51,8.07,5.09,16.09C1339.83,207,1433.59,374.36,1557,513.66c85.34,96.36,184.35,178.63,295.75,246V296C1767.06,205.65,1705.48,103.63,1661.45,0Z" />
-            </g>
-          </svg>
+        <!-- hamburger -->
+        <div class="hamburger">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
         </div>
-        <div class="intro__bgImg intro__bgImg--behind">
-          <svg viewBox="0 0 787 780.72">
-            <g>
-              <path d="M787,464.72c-1.28-1.9-2.68-3.74-3.82-5.72Q721,351.29,658.89,243.56c-1-1.73-2-3.42-3.43-5.75-1.27,2.08-2.37,3.79-3.38,5.55q-70.7,123.25-141.28,246.57c-2.21,3.87-4.57,5.12-9,5.12q-144.5-.2-289-.1h-7.48c1.22,2.33,2,4,3,5.64Q279.83,624.84,351.45,749c2.25,3.89,2.12,6.58-.06,10.28-4.1,7-7.63,14.28-11.39,21.44H203c4-7.08,7.86-14.29,12.17-21.19,2.15-3.44,2-6,0-9.46Q108.92,565.86,2.9,381.54A36.26,36.26,0,0,0,0,377.72q0-.5,0-1c2.49-.1,5-.29,7.48-.29q212.72,0,425.43.1c4.65,0,7-1.54,9.25-5.46Q547,188,652.05,5c.88-1.53,1.86-3,3.11-5,1.44,2.36,2.57,4.14,3.63,6q62.76,108.79,125.52,217.58c.83,1.43,1.79,2.78,2.69,4.17Z" />
-            </g>
-            </g>
-          </svg>
-        </div>
+        <!-- hamburger end -->
 
-        <!-- header -->
-        <header class="header">
-
-          <!-- hamburger -->
-          <div class="hamburger">
-            <span class="hamburger__line"></span>
-            <span class="hamburger__line"></span>
-            <span class="hamburger__line"></span>
-          </div>
-          <!-- hamburger end -->
-
-          <div class="container">
-            <div class="row flexVertical">
-              <div class="col-xl-4 col-lg-3 col-md-3 col-sm-6">
-                <div class="header__logo">
-                  <a href="#">
-                    <svg viewBox="0 0 939.25 183.46">
-                      <g>
-                        <text class="cls-1" transform="translate(0 141.27)">
-                          <tspan class="cls-2">sumi</tspan>
-                          <tspan class="cls-3" x="336.04" y="0">r</tspan>
-                          <tspan class="cls-4" x="390.89" y="0">ina.</tspan>
-                          <tspan class="cls-5" x="636.29" y="0">c</tspan>
-                          <tspan class="cls-6" x="709.2" y="0">om</tspan>
-                        </text>
-                      </g>
-                    </svg>
-                  </a>
-                </div>
+        <div class="container">
+          <div class="row flexVertical">
+            <div class="col-xl-4 col-lg-3 col-md-3 col-sm-6">
+              <div class="header__logo">
+                <a href="#">
+                  <svg viewBox="0 0 939.25 183.46">
+                    <g>
+                      <text class="cls-1" transform="translate(0 141.27)">
+                        <tspan class="cls-2">sumi</tspan>
+                        <tspan class="cls-3" x="336.04" y="0">r</tspan>
+                        <tspan class="cls-4" x="390.89" y="0">ina.</tspan>
+                        <tspan class="cls-5" x="636.29" y="0">c</tspan>
+                        <tspan class="cls-6" x="709.2" y="0">om</tspan>
+                      </text>
+                    </g>
+                  </svg>
+                </a>
               </div>
-              <div class="col-lg-2 col-md-3 col-sm-5 order-md-last">
-                <div class="header__order">
-                  <a data-scroll class="flexVertical" href="#contacts">оставить заявку</a>
-                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5 order-md-last">
+              <div class="header__order">
+                <a data-scroll class="flexVertical" href="#contacts">оставить заявку</a>
               </div>
-              <div class="col-xl-6 col-lg-7 col-md-6 col-sm-12">
-                <div class="header__mnu mnu-js">
-                  <ul>
-                    <li class="header__item"><a class="header__link" href="#repatriation"><span data-hover="репатриация"
-                          data-scroll>репатриация</span></a></li>
-                    <li class="header__item"><a class="header__link" href="#services"><span data-hover="услуги"
-                          data-scroll>услуги</span></a></li>
-                    <li class="header__item"><a class="header__link" href="#reviews"><span data-hover="отзывы"
-                          data-scroll>отзывы</span></a></li>
-                    <li class="header__item"><a class="header__link" href="#contacts"><span data-hover="контакты"
-                          data-scroll>контакты</span></a></li>
-                  </ul>
-                </div>
+            </div>
+            <div class="col-xl-6 col-lg-7 col-md-6 col-sm-12">
+              <div class="header__mnu mnu-js">
+                <ul>
+                  <li class="header__item"><a class="header__link" href="#repatriation" data-scroll><span data-hover="репатриация">репатриация</span></a></li>
+                  <li class="header__item"><a class="header__link" href="#services" data-scroll><span data-hover="услуги">услуги</span></a></li>
+                  <li class="header__item"><a class="header__link" href="#reviews" data-scroll><span data-hover="отзывы">отзывы</span></a></li>
+                  <li class="header__item"><a class="header__link" href="#contacts" data-scroll><span data-hover="контакты">контакты</span></a></li>
+                </ul>
               </div>
             </div>
           </div>
-        </header>
-        <!-- header end -->
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- intro -->
+      <section class="intro">
+        <div class="intro__bgImg wow fadeInRight"></div>
         <div class="container">
-          <!-- <div class="intro__contentWrap"> -->
           <div class="intro__descWrap">
-            <h1 class="intro__caption">Хотите жить в Израиле?</h1>
-            <p class="desc">Стране неограниченных возможностей? У Вас есть еврейские корни? Тогда мои услуги - для
+            <h1 class="intro__caption wow fadeInLeft" data-wow-duration="1s">Хотите жить <br> в Израиле?</h1>
+            <p class="desc wow fadeInLeft" data-wow-duration="1.5s">Стране неограниченных возможностей? У Вас есть
+              еврейские корни? Тогда мои услуги - для
               вас!
               Вся
               необходимая информация для удачного и комфортного Возвращения на Родину.</p>
           </div>
           <div class="intro__count">
-            <div class="intro__countItem">
+            <div class="intro__countItem wow fadeInUp">
               <p class="count-js">165</p>
               <span>репатрианта</span>
             </div>
-            <div class="intro__countItem">
+            <div class="intro__countItem wow fadeInUp">
               <p class="count-js">8</p>
               <span>лет на рынке</span>
             </div>
-            <div class="intro__countItem">
+            <div class="intro__countItem wow fadeInUp">
               <p class="count-js">248</p>
               <span>найденных документа</span>
             </div>
           </div>
-
-
-          <!-- </div> -->
         </div>
-
       </section>
       <!-- intro end -->
 
       <!-- target -->
-      <section class="target indent">
+      <section id="repatriation" class="target indent">
         <div class="container">
-
+          <div class="target__descWrap">
+            <div class="miniCaptionWrap">
+              <h2 class="miniCaption">репатриация</h2>
+            </div>
+            <div class="miniCaptionWrap miniCaptionWrap--verticalCap">
+              <h3 class="miniCaption">услуги</h3>
+            </div>
+            <div class="row flexVertical">
+              <div class="col-xl-3 col-lg-3">
+                <div class="mainCaptionWrap">
+                  <h2 class="mainCaption">Цель</h2>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-8">
+                <div class="target__desc">
+                  <p class="desc desc--dark">Для внутреннего самоощущения достаточно просто знать, что вы – еврей. Но
+                    бывают ситуации, когда это надо доказать
+                    документально.
+                    Зачастую для того, чтобы доказать еврейское, или любое другое, происхождение необходимо
+                    предоставить документы, которые
+                    бы свидетельствовали об этом. Дело в том, что подтверждение национальности – это порой нелегкий
+                    процесс, связанный с
+                    поиском архивных документов советской и до революционной эпохи.
+                    Я оказываю помощь в архивном поиске недостающих документов.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- target end -->
 
+      <!-- targetList -->
+      <section class="targetList indent" style="background-image: url('../images/target/target.jpg');">
+        <div class="container">
+          <div class="row flexVertical">
+            <div class="col-md-4">
+              <div class="targetList__item wow fadeInDown" data-wow-duration="0.5s">
+                <div class="targetList__itemIcon">
+                  <i class="icon-starofdavid"></i>
+                </div>
+                <h2 class="targetList__itemCap">Репатриация</h2>
+                <div class="targetList__itemDesc">
+                  <p>Реализации прав для возвращение на Родину</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="targetList__item wow fadeInDown" data-wow-duration="1s">
+                <div class="targetList__itemIcon">
+                  <i class="icon-svitok"></i>
+                </div>
+                <h2 class="targetList__itemCap">Сбор документов</h2>
+                <div class="targetList__itemDesc">
+                  <p>Гарантируем безопасность и сохранность полученной информации</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="targetList__item wow fadeInDown" data-wow-duration="1.5s">
+                <div class="targetList__itemIcon">
+                  <i class="icon-svechi"></i>
+                </div>
+                <h2 class="targetList__itemCap">Поиск корней</h2>
+                <div class="targetList__itemDesc">
+                  <p>Подтверждение еврейского происхождения и сбор всех необходимых документов</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- targetList end -->
+
+      <!-- about -->
+      <!-- <section class="about indent">
+
+      </section> -->
+      <!-- about end -->
+
+      <section class="request indent">
+        <div class="container">
+          <div class="mainCaptionWrap mainCaptionWrap--light">
+            <h2 class="mainCaption">Подать заявку</h2>
+          </div>
+          <form action="" class="form">
+            <div class="row">
+              <div class="col-lg-4">
+                <label for="">Имя</label>
+                <input type="text" class="form__input" placeholder="Константин">
+              </div>
+              <div class="col-lg-4">
+                <label for="">Фамилия</label>
+                <input type="text" class="form__input" placeholder="Константинопольский">
+              </div>
+              <div class="col-lg-4">
+                <label for="">Мобильный телефон</label>
+                <input type="text" class="form__input" placeholder="">
+              </div>
+              <div class="col-lg-4">
+                <label for="">E-mail</label>
+                <input type="text" class="form__input" placeholder="mail@mail.ru">
+              </div>
+              <div class="col-lg-4">
+                <label for="">Ваша страна</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="Россия">Россия</option>
+                  <option value="Кыргызстан">Кыргызстан</option>
+                  <option value="Казахстан">Казахстан</option>
+                  <option value="Узбекистан">Узбекистан</option>
+                  <option value="Туркменистан">Туркменистан</option>
+                  <option value="Таджикистан">Таджикистан</option>
+                  <option value="Армения">Армения</option>
+                  <option value="Белоруссия">Белоруссия</option>
+                  <option value="Молдавия">Молдавия</option>
+                  <option value="Азербайджан">Азербайджан</option>
+                  <option value="Грузия">Грузия</option>
+                </select>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      
+      <!-- footer -->
+      <footer>
+
+      </footer>
+      <!-- footer end -->
+
     </div>
-    <!-- content end -->
-
-    <!-- footer -->
-    <footer>
-
-    </footer>
-    <!-- footer end -->
-
-  </div>
-  <!-- contentWrap end -->
+    <!-- contentWrap end -->
 
 
 
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/wow/dist/wow.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>

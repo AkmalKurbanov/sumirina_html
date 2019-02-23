@@ -4,7 +4,7 @@
 @import "./bower_components/bootstrap4/scss/functions";
 @import "./bower_components/bootstrap4/scss/variables";
 @import "./bower_components/bootstrap4/scss/mixins";
-@import "./bower_components/bootstrap4/scss/nav";
+@import "./bower_components/bootstrap4/scss/forms";
 // End bootstrap
 // Optional bootstrap
 @import "./bower_components/bootstrap4/scss/reboot";
@@ -27,5 +27,8 @@
 @import "_hamburger";
 @import "_intro";
 @import "_target";
+@import "_targetList";
+@import "_about";
+@import "_request";
 
 @import "_footer";

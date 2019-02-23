@@ -1,6 +1,21 @@
 $(document).ready(function () {
 
+  // animation
+  if ($(window).width() > 575) {
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: false,
+      live: true,
+      callback: function (box) {
 
+      },
+      scrollContainer: null
+    });
+    wow.init();
+  }
+  // animation end
 
   // hamburger
   $('.hamburger').click(function () {
@@ -48,6 +63,20 @@ $(document).ready(function () {
   // count end
 
 
+
+  // sticky header
+  jQuery(window).scroll(function () {
+    var stickyHeader = jQuery('.intro').offset().top;
+    if (jQuery(this).scrollTop() > stickyHeader) {
+      $('.header').addClass('headerBg');
+    } else {
+      $('.header').removeClass('headerBg');
+    }
+
+  });
+
+
+  // sticky header end
 
 
 });

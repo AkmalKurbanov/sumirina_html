@@ -1,0 +1,43 @@
+.request {
+  background-color: $mc;
+
+  .form {
+    label {
+      display: block;
+      margin: 0;
+      color: #c1d8fc;
+      font-family: $rr;
+      font-size: 17px;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #2a2a2a;
+      font-family: $rr;
+      font-size: 18px;
+    }
+
+    ::-moz-placeholder {
+      color: #2a2a2a;
+    }
+
+    :-moz-placeholder {
+      color: #2a2a2a;
+    }
+
+    :-ms-input-placeholder {
+      color: #2a2a2a;
+    }
+
+    &__input {
+      min-height: 54px;
+      border: none;
+      width: 100%;
+      max-width: 100%;
+      border-radius: 4px;
+      padding-left: 13px;
+      margin-bottom: 19px;
+      outline: none;
+      font-family: $rc;
+    }
+  }
+}

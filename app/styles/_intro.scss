@@ -2,10 +2,13 @@
   background-color: $mc;
   min-height: 100vh;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
+
+  @media (max-width: 575.98px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   &:before {
     background-attachment: fixed;
@@ -20,50 +23,88 @@
   }
 
   &__bgImg {
-    min-height: 600px;
-    max-width: 600px;
     width: 100%;
     position: fixed;
     right: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: -1;
 
-    img,
-    svg {
-      width: 100%;
-      max-width: 100%;
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
     }
 
-    svg {
-      path {
-        fill: $sc;
+    &:before {
+      background-image: url('../images/header/polZvezdy.svg');
+      max-width: 780px;
+      width: 100%;
+      min-height: 780px;
+      bottom: 0;
+      right: 0;
+      background-size: cover;
+
+      @media (max-width: 1199.98px) {
+        max-width: 550px;
+        min-height: 550px;
+      }
+
+      @media (max-width: 991.98px) {
+        max-width: 450px;
+        min-height: 450px;
+        right: -80px;
+      }
+
+      @media (max-width: 575.98px) {
+        right: 0;
       }
     }
 
-    &--behind {
-      min-height: 775px;
-      max-width: 780px;
-      z-index: 1;
+    &:after {
+      background-image: url('../images/header/polSvechi.svg');
+      max-width: 600px;
+      width: 100%;
+      min-height: 600px;
+      bottom: 0;
+      right: 0;
+      background-size: cover;
 
-      svg {
-        path {
-          fill: rgba(255, 255, 255, 0.11);
-        }
+      @media (max-width: 1199.98px) {
+        max-width: 450px;
+        min-height: 450px;
+      }
+
+      @media (max-width: 991.98px) {
+        max-width: 400px;
+        min-height: 400px;
+        right: -100px;
+      }
+
+      @media (max-width: 767.98px) {
+        right: -170px;
+      }
+
+      @media (max-width: 575.98px) {
+        display: none;
       }
     }
   }
 
-  // &__contentWrap {
-  //   height: 100%;
-  //   position: relative;
-  // }
-
   &__descWrap {
-    max-width: 27%;
+    max-width: 500px;
     width: 100%;
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
+
+    @media (max-width: 1599.98px) {
+      max-width: 450px;
+    }
+
+    @media (max-width: 575.98px) {
+      position: relative;
+      transform: none;
+    }
   }
 
   &__caption {
@@ -74,6 +115,41 @@
     line-height: 75px;
     text-shadow: 0px 3px 7px rgba(21, 54, 103, 0.34);
     margin-bottom: 30px;
+
+    @media (max-width: 1599.98px) {
+      font-size: 60px;
+      line-height: 55px;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 1199.98px) {
+      font-size: 50px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 991.98px) {
+      font-size: 48px;
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: 35px;
+      line-height: 35px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 399.98px) {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
   }
 
   &__count {
@@ -83,7 +159,24 @@
     position: fixed;
     bottom: 45px;
     width: 100%;
-    max-width: 27%;
+    max-width: 530px;
+
+    @media (max-width: 1599.98px) {
+      max-width: 450px;
+    }
+
+    @media (max-width: 1199.98px) {
+      max-width: 440px;
+    }
+
+
+
+    @media (max-width: 575.98px) {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      padding: 0 15px;
+    }
   }
 
   &__countItem {
@@ -96,10 +189,52 @@
       font-size: 90px;
       margin: 0;
       line-height: 90px;
+
+      @media (max-width: 1599.98px) {
+        font-size: 70px;
+        line-height: 70px;
+      }
+
+      @media (max-width: 1199.98px) {
+        font-size: 60px;
+        line-height: 60px;
+      }
+
+      @media (max-width: 991.98px) {
+        font-size: 50px;
+        line-height: 50px;
+      }
+
+      @media (max-width: 767.98px) {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      @media (max-width: 575.98px) {
+        font-size: 30px;
+        line-height: 30px;
+      }
+
+      @media (max-width: 399.98px) {
+        font-size: 25px;
+        line-height: 25px;
+      }
     }
 
     span {
       font-family: $rc;
+
+      @media (max-width: 1599.98px) {
+        font-size: 13px;
+      }
+
+      @media (max-width: 575.98px) {
+        font-size: 12px;
+      }
+
+      @media (max-width: 399.98px) {
+        font-size: 10px;
+      }
     }
   }
 }

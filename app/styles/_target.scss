@@ -1,3 +1,18 @@
 .target {
-  
+  background-color: $wc;
+  .flexVertical {
+    justify-content: flex-start;
+  }
+
+  &__descWrap {
+    position: relative;
+  }
+
+  &__desc {
+    padding-right: 30px;
+
+    @media (max-width: 767.98px) {
+      padding-right: 0;
+    }
+  }
 }

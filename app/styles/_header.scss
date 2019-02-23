@@ -1,16 +1,26 @@
 .header {
-  padding: 40px 0;
-  z-index: 1;
-  position: absolute;
+  min-height: 130px;
+  position: fixed;
   width: 100%;
   top: 0;
+  z-index: 9;
+  display: flex;
+  align-items: center;
 
   @media (max-width: 1199.98px) {
-    padding: 20px 0;
+    min-height: 100px;
   }
 
-  @media (max-width: 991.98px) {
-    padding: 10px 0;
+  &:before {
+    position: absolute;
+    content: '';
+    mask-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 75%);
+    background-color: rgba(19, 95, 167, 0.8);
+    width: 100%;
+    min-height: 100%;
+    transition: $trn;
+    opacity: 0;
+    top: 0;
   }
 
   &__logo {
@@ -96,11 +106,13 @@
       z-index: 9;
 
       &:before {
+        position: absolute;
+        content: '';
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(46, 102, 187, 0.5);
+        background-color: rgba(46, 102, 187, 0.9);
       }
     }
 
@@ -161,6 +173,7 @@
       transition: transform 500ms;
 
       &:after {
+        position: absolute;
         content: attr(data-hover);
         position: absolute;
         top: -100%;
@@ -169,8 +182,7 @@
       }
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       span {
         transform: translateY(20px);
         color: $sc;
@@ -222,6 +234,7 @@
 
       &:before {
         position: absolute;
+        content: '';
         top: 0;
         left: -75%;
         z-index: 2;
@@ -240,3 +253,16 @@
     }
   }
 }
+
+.headerBg {
+  transition: $trn;
+
+  &:before {
+    opacity: 1;
+  }
+
+}
+
+// .headerBgNone {
+//   &:before
+// }
