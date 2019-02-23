@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+  // sticky header
+  jQuery(window).scroll(function () {
+    var stickyHeader = jQuery('.intro').offset().top;
+    if (jQuery(this).scrollTop() > stickyHeader) {
+      $('.header').addClass('headerBg');
+    } else {
+      $('.header').removeClass('headerBg');
+    }
+  });
+  // sticky header end
+
+
   // animation
   if ($(window).width() > 575) {
     var wow = new WOW({
@@ -64,19 +76,6 @@ $(document).ready(function () {
 
 
 
-  // sticky header
-  jQuery(window).scroll(function () {
-    var stickyHeader = jQuery('.intro').offset().top;
-    if (jQuery(this).scrollTop() > stickyHeader) {
-      $('.header').addClass('headerBg');
-    } else {
-      $('.header').removeClass('headerBg');
-    }
-
-  });
-
-
-  // sticky header end
 
 
 });

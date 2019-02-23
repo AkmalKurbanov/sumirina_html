@@ -174,16 +174,14 @@ section {
 
 // mainCaption
 .mainCaptionWrap {
-  @media (max-width: 991.98px) {
-    margin-bottom: 25px;
-  }
+  margin-bottom: 20px;
 
-  @media (max-width: 767.98px) {
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: 575.98px) {
+  @media (max-width: 1199.98px) {
     margin-bottom: 15px;
+  }
+
+  @media (max-width: 991.98px) {
+    margin-bottom: 10px;
   }
 
   .mainCaption {
@@ -212,6 +210,22 @@ section {
     .mainCaption {
       color: $wc;
       font-size: 45px;
+    }
+  }
+
+  &--dark {
+    margin-bottom: 0;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 575.98px) {
+      margin-bottom: 15px;
     }
   }
 }

@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 9;
+  z-index: 9999;
   display: flex;
   align-items: center;
 
@@ -11,17 +11,18 @@
     min-height: 100px;
   }
 
-  &:before {
-    position: absolute;
-    content: '';
-    mask-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 75%);
-    background-color: rgba(19, 95, 167, 0.8);
-    width: 100%;
-    min-height: 100%;
-    transition: $trn;
-    opacity: 0;
-    top: 0;
-  }
+ &:before {
+   position: absolute;
+   content: '';
+   mask-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 75%);
+   background-color: rgba(19, 95, 167, 0.8);
+   width: 100%;
+   min-height: 100%;
+   transition: $trn;
+   opacity: 0;
+   top: 0;
+ }
+
 
   &__logo {
     max-width: 270px;
