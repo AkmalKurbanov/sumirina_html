@@ -75,7 +75,7 @@ ul {
   padding: 50px 0;
   position: relative;
   z-index: 9;
-
+  overflow: hidden;
   @media (max-width: 1199.98px) {
     padding: 45px 0;
   }

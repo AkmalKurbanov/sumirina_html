@@ -1,4 +1,53 @@
 .about {
   position: relative;
   background-color: #ffffff;
+  width: 100%;
+
+  &__imgWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    max-width: 345px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &--middle {
+      box-shadow: 0px 36px 79px 0px rgba(9, 30, 44, 0.81);
+    }
+
+    &--smallImg {
+      max-width: 302px;
+    }
+
+    &--leftSide,
+    &--rightSide {
+      position: absolute;
+      top: 25%;
+      // transform: translateY(-50%);
+    }
+
+    &--leftSide {
+      left: 20px;
+    }
+
+    &--rightSide {
+      right: 20px;
+    }
+  }
+
+  &__img {
+    border-radius: 5px;
+    overflow: hidden;
+  }
 }

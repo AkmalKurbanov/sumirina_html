@@ -1,6 +1,7 @@
 .contacts {
   position: relative;
   z-index: 99999;
+  overflow: hidden;
 
   &:before {
     content: '';
@@ -42,10 +43,12 @@
               color: $mc;
             }
           }
+
           .icon-mobile {
             font-size: 22px;
           }
-          i{
+
+          i {
             position: absolute;
             left: -57.5px;
             top: 0;
