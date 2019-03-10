@@ -32,14 +32,7 @@ h6 {
 
 
 
-// flex vertical
-.flexVertical {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-// flex verticalend
 
 // flex vertical
 // .flexHorizontalEnd {
@@ -76,6 +69,7 @@ ul {
   position: relative;
   z-index: 9;
   overflow: hidden;
+
   @media (max-width: 1199.98px) {
     padding: 45px 0;
   }
@@ -102,6 +96,10 @@ ul {
   line-height: 1.4;
   font-family: $rr;
   margin: 0;
+
+  @media (max-width: 575.98px) {
+    font-size: 15px;
+  }
 
   &--dark {
     color: #000000;
@@ -144,6 +142,10 @@ section {
     font-weight: 400;
     font-size: 16px;
     color: #0f0f0f;
+
+    @media (max-width: 575.98px) {
+      display: none;
+    }
   }
 
   &--verticalCap {
@@ -165,6 +167,10 @@ section {
       transform: none;
       top: 22px;
       right: 0;
+    }
+
+    @media (max-width: 575.98px) {
+      display: none;
     }
   }
 }
@@ -193,17 +199,17 @@ section {
       font-size: 45px;
     }
 
-    @media (max-width: 991.98px) {
-      font-size: 30px;
-    }
+    // @media (max-width: 991.98px) {
+    //   font-size: 30px;
+    // }
 
-    @media (max-width: 767.98px) {
-      font-size: 35px;
-    }
+    // @media (max-width: 767.98px) {
+    //   font-size: 35px;
+    // }
 
-    @media (max-width: 575.98px) {
-      font-size: 25px;
-    }
+    // @media (max-width: 575.98px) {
+    //   font-size: 25px;
+    // }
   }
 
   &--light {
@@ -226,6 +232,15 @@ section {
 
     @media (max-width: 575.98px) {
       margin-bottom: 15px;
+    }
+
+    &--center {
+      text-align: center;
+      margin-bottom: 40px;
+
+      .mainCaption {
+        font-size: 40px;
+      }
     }
   }
 }

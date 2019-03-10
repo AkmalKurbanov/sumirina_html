@@ -1,0 +1,154 @@
+.reviews {
+  background-color: #fff;
+
+
+
+  .comment {
+    position: relative;
+
+    &__avatar {
+      max-width: 160px;
+      width: 100%;
+      min-height: 160px;
+      margin: auto;
+      border-radius: 100%;
+      overflow: hidden;
+      border: 1px solid #eee;
+      box-shadow: 0px 14px 54px 0px rgba(9, 30, 44, 0.14);
+      margin-bottom: 40px;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    &__wrap {
+      text-align: center;
+    }
+
+    &__desc {
+      margin: 0 18%;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '';
+        background-image: url('../images/rewievs/qu.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 125px;
+        height: 100px;
+        left: 0;
+        top: -55px;
+      }
+
+      p {
+        font-family: $rl;
+        font-size: 30px;
+        color: #080c15;
+      }
+    }
+
+    &__reviewerName {
+      p {
+        font-family: $rm;
+        font-size: 22px;
+        color: #3a8ff7;
+        margin: 0;
+      }
+    }
+  }
+
+  .thumbs {
+    overflow: visible;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+
+    &__item {
+      position: absolute;
+      cursor: pointer;
+
+      &:first-child {
+        top: 0;
+        left: 25px;
+
+        .thumbs__avatar {
+          max-width: 60px;
+          min-height: 60px;
+        }
+      }
+
+      &:nth-child(2) {
+        top: 50px;
+        left: 250px;
+
+        .thumbs__avatar {
+          max-width: 80px;
+          min-height: 80px;
+        }
+      }
+
+      &:nth-child(3) {
+        top: 250px;
+        left: 50px;
+
+        .thumbs__avatar {
+          max-width: 120px;
+          min-height: 120px;
+        }
+      }
+
+      &:nth-child(4) {
+        top: 0;
+        right: 240px;
+
+        .thumbs__avatar {
+          max-width: 115px;
+          min-height: 115px;
+        }
+      }
+
+      &:nth-child(5) {
+        top: 150px;
+        right: 30px;
+
+        .thumbs__avatar {
+          max-width: 120px;
+          min-height: 120px;
+        }
+      }
+
+      &:nth-child(6) {
+        top: 375px;
+        right: 130px;
+
+        .thumbs__avatar {
+          max-width: 78px;
+          min-height: 78px;
+        }
+      }
+
+
+    }
+
+
+    &__avatar {
+      overflow: hidden;
+      border-radius: 100%;
+      border: 1px solid #eee;
+      box-shadow: 0px 20px 62px 0px rgba(9, 30, 44, 0.15);
+      margin: auto;
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+
+    }
+
+  }
+}

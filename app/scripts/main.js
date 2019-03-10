@@ -75,7 +75,35 @@ $(document).ready(function () {
   // count end
 
 
+  // slider reviews
+  var galleryThumbs = new Swiper('.thumbs', {
+    slidesPerView: 6,
+    touchRatio: 0,
+  });
+  var galleryTop = new Swiper('.comment', {
+    simulateTouch: false,
+    thumbs: {
+      swiper: galleryThumbs,
+    },
+  });
+  // slider reviewsend
 
 
+
+
+  // thanks message
+  //E-mail Ajax Send
+  $('form').submit(function () {
+    var th = $(this);
+    $.ajax({
+      type: 'POST',
+      url: 'mail.php',
+      data: th.serialize()
+    }).done(function () {
+      $.fancybox.open('<div class="message"><h2>Hello!</h2><p>You are awesome!</p></div>');
+    });
+    return false;
+  });
+  // thanks message end
 
 });

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -19,6 +19,7 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -56,37 +57,37 @@
         <!-- hamburger end -->
 
         <div class="container">
-          <div class="row flexVertical">
-            <div class="col-xl-4 col-lg-3 col-md-3 col-sm-6">
-              <div class="header__logo">
-                <a href="#">
-                  <svg viewBox="0 0 939.25 183.46">
-                    <g>
-                      <text class="cls-1" transform="translate(0 141.27)">
-                        <tspan class="cls-2">sumi</tspan>
-                        <tspan class="cls-3" x="336.04" y="0">r</tspan>
-                        <tspan class="cls-4" x="390.89" y="0">ina.</tspan>
-                        <tspan class="cls-5" x="636.29" y="0">c</tspan>
-                        <tspan class="cls-6" x="709.2" y="0">om</tspan>
-                      </text>
-                    </g>
-                  </svg>
-                </a>
+          <div class="row">
+            <div class="header__wrap">
+              <div class="col-lg-4 col-md-3 col-sm-12">
+                <div class="header__logo">
+                  <a href="#">
+                    <svg viewBox="0 0 939.25 183.46">
+                      <g>
+                        <text class="cls-1" transform="translate(0 141.27)">
+                          <tspan class="cls-2">sumi</tspan>
+                          <tspan class="cls-3" x="336.04" y="0">r</tspan>
+                          <tspan class="cls-4" x="390.89" y="0">ina.</tspan>
+                          <tspan class="cls-5" x="636.29" y="0">c</tspan>
+                          <tspan class="cls-6" x="709.2" y="0">om</tspan>
+                        </text>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-5 order-md-last">
-              <div class="header__order">
-                <a data-scroll class="flexVertical" href="#request">оставить заявку</a>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-7 col-md-6 col-sm-12">
-              <div class="header__mnu mnu-js">
-                <ul>
-                  <li class="header__item"><a class="header__link" href="#repatriation" data-scroll><span data-hover="репатриация">репатриация</span></a></li>
-                  <li class="header__item"><a class="header__link" href="#services" data-scroll><span data-hover="услуги">услуги</span></a></li>
-                  <li class="header__item"><a class="header__link" href="#reviews" data-scroll><span data-hover="отзывы">отзывы</span></a></li>
-                  <li class="header__item"><a class="header__link" href="#contacts" data-scroll><span data-hover="контакты">контакты</span></a></li>
-                </ul>
+              <div class="col-lg-8 col-md-9 col-sm-12">
+                <div class="header__mnu mnu-js">
+                  <ul>
+                    <li class="header__item"><a class="header__link" href="#repatriation" data-scroll><span data-hover="репатриация">репатриация</span></a></li>
+                    <li class="header__item"><a class="header__link" href="#services" data-scroll><span data-hover="услуги">услуги</span></a></li>
+                    <li class="header__item"><a class="header__link" href="#reviews" data-scroll><span data-hover="отзывы">отзывы</span></a></li>
+                    <li class="header__item"><a class="header__link" href="#contacts" data-scroll><span data-hover="контакты">контакты</span></a></li>
+                  </ul>
+                  <div class="header__order">
+                    <a data-scroll href="#request">оставить заявку</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -134,7 +135,7 @@
             <div class="miniCaptionWrap miniCaptionWrap--verticalCap">
               <h3 class="miniCaption">услуги</h3>
             </div>
-            <div class="row flexVertical">
+            <div class="row">
               <div class="col-xl-3 col-lg-3">
                 <div class="mainCaptionWrap mainCaptionWrap--dark">
                   <h2 class="mainCaption">Цель</h2>
@@ -161,9 +162,9 @@
       <!-- target end -->
 
       <!-- targetList -->
-      <section id="services" class="targetList indent" style="background-image: url('../images/target/target.jpg');">
+      <section id="services" class="targetList indent" style="background-image: url('./images/target/target.jpg');">
         <div class="container">
-          <div class="row flexVertical">
+          <div class="row">
             <div class="col-md-4">
               <div class="targetList__item wow fadeInDown" data-wow-duration="0.5s">
                 <div class="targetList__itemIcon">
@@ -215,8 +216,8 @@
             <div class="about__item about__item--rightSide wow fadeInRight">
               <img src="images/about/7.jpg" alt="">
             </div>
-            <div class="row flexVertical">
-              <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-4 col-sm-12 mobileWrap">
                 <div class="about__item wow fadeInDown">
                   <img src="images/about/1.jpg" alt="">
                 </div>
@@ -224,7 +225,7 @@
                   <img src="images/about/3.jpg" alt="">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-6">
                 <div class="about__item about__item--middle wow fadeInDown">
                   <img src="images/about/2.jpg" alt="">
                 </div>
@@ -232,7 +233,7 @@
                   <img src="images/about/4.jpg" alt="">
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-6">
                 <div class="about__item wow fadeInDown">
                   <img src="images/about/1.jpg" alt="">
                 </div>
@@ -246,33 +247,197 @@
       </section>
       <!-- about end -->
 
+      <!-- reviews -->
+      <div class="reviews indent">
+        <div class="mainCaptionWrap mainCaptionWrap--dark mainCaptionWrap--dark--center">
+          <h2 class="mainCaption">Отзывы</h2>
+        </div>
+        <div class="reviews__commentBlock">
+          <div class="container">
+            <div class="swiper-container comment">
+              <div class="swiper-wrapper reviews__comment">
+
+                <div class="swiper-slide comment__item">
+                  <div class="comment__wrap">
+                    <div class="comment__avatar">
+                      <img src="images/rewievs/female.png" alt="">
+                    </div>
+                    <div class="comment__desc">
+                      <p>Когда не мог восстановить <br>
+                        документы и получить граждаство Израиля, <br>
+                        только вы смогли мне помочь</p>
+                    </div>
+                    <div class="comment__reviewerName">
+                      <p>Анна М.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide comment__item">
+                  <div class="comment__wrap">
+                    <div class="comment__avatar">
+                      <img src="images/rewievs/male.png" alt="">
+                    </div>
+                    <div class="comment__desc">
+                      <p>Когда не мог восстановить <br>
+                        документы и получить граждаство Израиля, <br>
+                        только вы смогли мне помочь</p>
+                    </div>
+                    <div class="comment__reviewerName">
+                      <p>Алексей М.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide comment__item">
+                  <div class="comment__wrap">
+                    <div class="comment__avatar">
+                      <img src="images/rewievs/male.png" alt="">
+                    </div>
+                    <div class="comment__desc">
+                      <p>Когда не мог восстановить <br>
+                        документы и получить граждаство Израиля, <br>
+                        только вы смогли мне помочь</p>
+                    </div>
+                    <div class="comment__reviewerName">
+                      <p>Валерий М.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide comment__item">
+                  <div class="comment__wrap">
+                    <div class="comment__avatar">
+                      <img src="images/rewievs/female.png" alt="">
+                    </div>
+                    <div class="comment__desc">
+                      <p>Когда не мог восстановить <br>
+                        документы и получить граждаство Израиля, <br>
+                        только вы смогли мне помочь</p>
+                    </div>
+                    <div class="comment__reviewerName">
+                      <p>Людмила М.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide comment__item">
+                  <div class="comment__wrap">
+                    <div class="comment__avatar">
+                      <img src="images/rewievs/male.png" alt="">
+                    </div>
+                    <div class="comment__desc">
+                      <p>Когда не мог восстановить <br>
+                        документы и получить граждаство Израиля, <br>
+                        только вы смогли мне помочь</p>
+                    </div>
+                    <div class="comment__reviewerName">
+                      <p>Владимир М.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide comment__item">
+                  <div class="comment__wrap">
+                    <div class="comment__avatar">
+                      <img src="images/rewievs/male.png" alt="">
+                    </div>
+                    <div class="comment__desc">
+                      <p>Когда не мог восстановить <br>
+                        документы и получить граждаство Израиля, <br>
+                        только вы смогли мне помочь</p>
+                    </div>
+                    <div class="comment__reviewerName">
+                      <p>Дмитрий М.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-container thumbs">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide thumbs__item">
+                  <div class="thumbs__avatar">
+                    <img src="images/rewievs/female.png" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-slide thumbs__item">
+                  <div class="thumbs__avatar">
+                    <img src="images/rewievs/male.png" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-slide thumbs__item">
+                  <div class="thumbs__avatar">
+                    <img src="images/rewievs/male.png" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-slide thumbs__item">
+                  <div class="thumbs__avatar">
+                    <img src="images/rewievs/female.png" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-slide thumbs__item">
+                  <div class="thumbs__avatar">
+                    <img src="images/rewievs/male.png" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-slide thumbs__item">
+                  <div class="thumbs__avatar">
+                    <img src="images/rewievs/male.png" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- reviews end -->
+
       <!-- request -->
       <section id="request" class="request indent">
         <div class="container">
           <div class="mainCaptionWrap mainCaptionWrap--light">
             <h2 class="mainCaption">Подать заявку</h2>
           </div>
-          <form action="" class="form">
+          <form method="post" class="form">
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="Sumirina" value="Site Name">
+            <input type="hidden" name="Ирина" value="250296a@gmail.com">
+            <input type="hidden" name="form_subject" value="Form Subject">
+            <!-- END Hidden Required Fields -->
+
             <div class="row">
               <div class="col-lg-4">
-                <label for="">Имя</label>
-                <input type="text" class="form__input" placeholder="Константин">
+                <label for="name">Имя</label>
+                <input id="name" name="Имя" type="text" class="form__input" placeholder="Константин">
               </div>
               <div class="col-lg-4">
-                <label for="">Фамилия</label>
-                <input type="text" class="form__input" placeholder="Константинопольский">
+                <label for="secondName">Фамилия</label>
+                <input id="secondName" name="Фамилия" type="text" class="form__input" placeholder="Константинопольский">
               </div>
               <div class="col-lg-4">
-                <label for="">Мобильный телефон</label>
-                <input type="text" class="form__input" placeholder="">
+                <label for="phone">Мобильный телефон</label>
+                <input id="phone" name="Мобильный телефон" type="text" class="form__input" placeholder="">
               </div>
               <div class="col-lg-4">
-                <label for="">E-mail</label>
-                <input type="text" class="form__input" placeholder="mail@mail.ru">
+                <label for="E-mail">E-mail</label>
+                <input id="E-mail" name="E-mail" type="text" class="form__input" placeholder="mail@mail.ru">
               </div>
               <div class="col-lg-4">
-                <label for="">Ваша страна</label>
-                <select class="form-control">
+                <label for="country">Ваша страна</label>
+                <select id="country" name="Cтрана" class="form-control">
                   <option value="Россия">Россия</option>
                   <option value="Кыргызстан">Кыргызстан</option>
                   <option value="Казахстан">Казахстан</option>
@@ -287,8 +452,8 @@
                 </select>
               </div>
               <div class="col-lg-4">
-                <label for="">Ваша город</label>
-                <select class="form-control">
+                <label for="cityTown">Ваша город</label>
+                <select id="cityTown" name="Город" class="form-control">
                   <option value="Москва">Москва</option>
                   <option value="Бишкек">Бишкек</option>
                   <option value="Астана">Астана</option>
@@ -303,41 +468,41 @@
                 </select>
               </div>
               <div class="col-lg-6">
-                <label for="">Есть ли документы, подтверждающие связь с еврейством?</label>
-                <select class="form-control form-control--sizeForm">
+                <label for="relationship">Есть ли документы, подтверждающие связь с еврейством?</label>
+                <select id="relationship" name="Подтверждение связи с еврейством" class="form-control form-control--sizeForm">
                   <option value="Документы надо искать">Документы надо искать</option>
                   <option value="Имеются">Имеются</option>
                   <option value="Не имеются">Не имеются</option>
                 </select>
               </div>
               <div class="col-lg-6">
-                <label for="">Обращались ли уже в израильское консульство?</label>
-                <select class="form-control form-control--sizeForm">
+                <label for="appeal">Обращались ли уже в израильское консульство?</label>
+                <select id="appeal" name="Обращениее в израильское консульство" class="form-control form-control--sizeForm">
                   <option value="Да">Да</option>
                   <option value="Нет">Нет</option>
                 </select>
               </div>
               <div class="col-lg-6">
-                <label for="">Получена ли уже виза репатрианта (в консульстве)?</label>
-                <select class="form-control form-control--sizeForm">
-                  <option value="Да">Имеются</option>
+                <label for="visa">Получена ли уже виза репатрианта (в консульстве)?</label>
+                <select id="visa" name="Получена ли виза" class="form-control form-control--sizeForm">
+                  <option value="Да">Имеется</option>
                   <option value="Нет">Нет</option>
                 </select>
               </div>
               <div class="col-lg-6">
-                <label for="">Как быстро вы планируете переезд в Израиль?</label>
-                <select class="form-control form-control--sizeForm">
-                  <option value="Да">После получения визы репатрианта</option>
-                  <option value="Нет">Через год</option>
+                <label for="moving">Как быстро вы планируете перезд в Израиль?</label>
+                <select id="moving" name="Планирование перезда" class="form-control form-control--sizeForm">
+                  <option value="После получения визы репатрианта">После получения визы репатрианта</option>
+                  <option value="Через год">Через год</option>
                 </select>
               </div>
               <div class="col-lg-12">
-                <label for="">Дополнительная информация</label>
-                <textarea placeholder="сообщение" class="form__textarea"></textarea>
+                <label for="additionalInfo">Дополнительная информация</label>
+                <textarea id="additionalInfo" name="Дополнительная информация" placeholder="сообщение" class="form__textarea"></textarea>
               </div>
               <div class="col-lg-12">
                 <div class="form__btnWrap">
-                  <button class="btn" type="submit">отправить</button>
+                  <button id="submit" class="btn" type="submit">отправить</button>
                 </div>
               </div>
             </div>
@@ -363,7 +528,7 @@
                 <ul>
                   <li><i class="icon-mobile"></i> <a href="tel:+79605821862">+7 960 582 18 62</a></li>
                   <li><a href="tel:+79646189600">+7 964 618 96 00</a></li>
-                  <li><i class="icon-mail"></i> <a href="mailto:sumirina.3008@gmail.com">sumirina.3008@gmail.com</a></li>
+                  <li><i class="icon-mail"></i> <a href="mailto:super.peshkova-irina2015@yandex.ru">super.peshkova-irina2015@yandex.ru</a></li>
                 </ul>
               </div>
             </div>
@@ -392,6 +557,7 @@
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <script src="/bower_components/wow/dist/wow.js"></script>
+  <script src="/bower_components/swiper/dist/js/swiper.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

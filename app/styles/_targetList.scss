@@ -4,17 +4,15 @@
   background-position: center;
   display: flex;
   align-items: center;
+  min-height: 570px;
 
-  .flexVertical {
-    min-height: 570px;
+  // z-index: 999999;
+  @media (max-width: 1199.98px) {
+    min-height: 500px;
+  }
 
-    @media (max-width: 1199.98px) {
-      min-height: 500px;
-    }
-
-    @media (max-width: 991.98px) {
-      min-height: 430px;
-    }
+  @media (max-width: 991.98px) {
+    min-height: 430px;
   }
 
   &__item {
