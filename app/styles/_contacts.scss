@@ -2,16 +2,24 @@
   position: relative;
   z-index: 99999;
   overflow: hidden;
+  background-color: $wc;
 
   &:before {
     content: '';
     position: absolute;
     max-width: 50%;
     width: 100%;
-    min-height: 217px;
+    min-height: 100%;
     top: 0;
     right: 0;
     background-color: $sc;
+
+    @media (max-width: 767.98px) {
+      max-width: 100%;
+      min-height: 50%;
+      bottom: 0;
+      top: auto;
+    }
   }
 
   .container-fluid {
@@ -19,8 +27,19 @@
   }
 
   &__item {
+    @media (max-width: 767.98px) {
+      text-align: center;
+    }
+
     &--contacts {
       padding-left: 115px;
+
+      @media (max-width: 400.98px) {
+        padding-left: 40px;
+        text-align: left;
+      }
+
+
 
       ul {
         margin: 0;
@@ -31,6 +50,10 @@
 
           &:last-child {
             margin-top: 20px;
+
+            @media (max-width: 400.98px) {
+              margin-top: 5px;
+            }
           }
 
           a {
@@ -39,6 +62,10 @@
             color: $bc;
             transition: $trn;
 
+            @media (max-width: 400.98px) {
+              font-size: 16px;
+            }
+
             &:hover {
               color: $mc;
             }
@@ -46,6 +73,10 @@
 
           .icon-mobile {
             font-size: 22px;
+
+            @media (max-width: 400.98px) {
+              font-size: 18px;
+            }
           }
 
           i {
@@ -60,6 +91,15 @@
             align-items: center;
             justify-content: center;
             color: $sc;
+
+            @media (max-width: 400.98px) {
+              width: 20px;
+              height: 20px;
+              left: -40px;
+              font-size: 12px;
+              top: 5px;
+            }
+
           }
         }
       }

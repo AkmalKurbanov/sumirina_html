@@ -9,6 +9,13 @@
       font-family: $rr;
       font-size: 17px;
       cursor: pointer;
+
+      @media (max-width: 1199.98px) {
+        font-size: 16px;
+      }
+        @media (max-width: 575.98px) {
+          font-size: 13px;
+        }
     }
 
     ::-webkit-input-placeholder {
@@ -81,21 +88,20 @@
         background-position: 97% 50%;
       }
     }
+
+    &__btnWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
-  &__btnWrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
 
   .btn {
     max-width: 245px;
     width: 100%;
     min-height: 65px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-transform: uppercase;
     color: $bc;
     font-family: $rm;
@@ -107,6 +113,7 @@
     transition: $trn;
     position: relative;
     overflow: hidden;
+    text-align: center;
 
     &:before {
       position: absolute;
@@ -124,6 +131,7 @@
     &:hover {
       background: none;
       color: $wc;
+
       &:before {
         animation: shine .9s;
       }

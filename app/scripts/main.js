@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
   // sticky header
   jQuery(window).scroll(function () {
     var stickyHeader = jQuery('.intro').offset().top;
@@ -81,7 +82,10 @@ $(document).ready(function () {
     touchRatio: 0,
   });
   var galleryTop = new Swiper('.comment', {
-    simulateTouch: false,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     thumbs: {
       swiper: galleryThumbs,
     },
@@ -105,5 +109,6 @@ $(document).ready(function () {
     return false;
   });
   // thanks message end
+
 
 });
