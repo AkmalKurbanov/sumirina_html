@@ -46,12 +46,15 @@
     @media (max-width: 767.98px) {
       margin: auto;
       margin-bottom: 15px;
+      margin-top: 15px;
     }
 
     @media (max-width: 575.98px) {
       margin-left: 0;
       margin-bottom: 10px;
-      max-width: 180px;
+      max-width: 250px;
+      text-align: left;
+      margin-top: 0;
     }
 
     img {
@@ -59,46 +62,71 @@
       max-width: 100%;
     }
 
-    svg {
-      width: 100%;
-      max-width: 100%;
+    // svg {
+    //   width: 100%;
+    //   max-width: 100%;
 
-      .cls-1 {
-        font-size: 168.78px;
-        fill: #ffc744;
-        font-family: AbrilDisplay-BoldItalic, AbrilDisplay BoldItalic;
-        letter-spacing: -0.01em;
+    //   .cls-1 {
+    //     font-size: 168.78px;
+    //     fill: #ffc744;
+    //     font-family: AbrilDisplay-BoldItalic, AbrilDisplay BoldItalic;
+    //     letter-spacing: -0.01em;
+    //   }
+
+    //   .cls-2,
+    //   .cls-3,
+    //   .cls-4 {
+    //     font-weight: 700;
+    //     font-style: italic;
+    //   }
+
+    //   .cls-3 {
+    //     letter-spacing: 0em;
+    //   }
+
+    //   .cls-4 {
+    //     letter-spacing: -0.01em;
+    //   }
+
+    //   .cls-5,
+    //   .cls-6 {
+    //     fill: #fff;
+    //     font-family: AbrilDisplay-Regular, AbrilDisplay Regular;
+    //   }
+
+    //   .cls-5 {
+    //     letter-spacing: -0.02em;
+    //   }
+
+    //   .cls-6 {
+    //     letter-spacing: -0.01em;
+    //   }
+
+    // }
+
+    a {
+      font-family: 'AbrilBlack';
+      font-style: italic;
+      color: $sc;
+      font-size: 35px;
+
+      span {
+        color: $wc;
       }
 
-      .cls-2,
-      .cls-3,
-      .cls-4 {
-        font-weight: 700;
-        font-style: italic;
+      @media (max-width: 991.98px) {
+        font-size: 19px;
       }
 
-      .cls-3 {
-        letter-spacing: 0em;
+      @media (max-width: 767.98px) {
+        font-size: 30px;
       }
 
-      .cls-4 {
-        letter-spacing: -0.01em;
-      }
 
-      .cls-5,
-      .cls-6 {
-        fill: #fff;
-        font-family: AbrilDisplay-Regular, AbrilDisplay Regular;
-      }
 
-      .cls-5 {
-        letter-spacing: -0.02em;
+      @media (max-width: 400.98px) {
+        font-size: 25px;
       }
-
-      .cls-6 {
-        letter-spacing: -0.01em;
-      }
-
     }
   }
 

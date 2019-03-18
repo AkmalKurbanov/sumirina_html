@@ -104,11 +104,20 @@ $(document).ready(function () {
       url: 'mail.php',
       data: th.serialize()
     }).done(function () {
-      $.fancybox.open('<div class="message"><h2>Hello!</h2><p>You are awesome!</p></div>');
+      $('.modalWindowWrap').fadeIn();
     });
     return false;
   });
   // thanks message end
+
+
+
+
+
+  $('.modalWindowWrap').on('click', function () {
+    $(this).hide();
+  });
+
 
 
 });

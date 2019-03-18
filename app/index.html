@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SUMIRINA</title>
+  <title>rep-arhiv.online</title>
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -62,17 +62,7 @@
               <div class="col-lg-4 col-md-3 col-sm-12">
                 <div class="header__logo">
                   <a data-scroll href="#top">
-                    <svg viewBox="0 0 939.25 183.46">
-                      <g>
-                        <text class="cls-1" transform="translate(0 141.27)">
-                          <tspan class="cls-2">sumi</tspan>
-                          <tspan class="cls-3" x="336.04" y="0">r</tspan>
-                          <tspan class="cls-4" x="390.89" y="0">ina.</tspan>
-                          <tspan class="cls-5" x="636.29" y="0">c</tspan>
-                          <tspan class="cls-6" x="709.2" y="0">om</tspan>
-                        </text>
-                      </g>
-                    </svg>
+                    rep-arhiv.<span>online</span>
                   </a>
                 </div>
               </div>
@@ -100,10 +90,10 @@
         <div class="intro__bgImg wow fadeInRight"></div>
         <div class="container">
           <div class="intro__descWrap">
-            <h1 class="intro__caption wow fadeInLeft" data-wow-duration="1s">Хотите жить <br> на родине предков?</h1>
-            <p class="desc wow fadeInLeft" data-wow-duration="1.5s">У Вас есть еврейские, польские, немецкие корни?
-              Тогда мои услуги - для Вас! Вся необходимая информация для удачного и
-              комфортного Возвращения на Родину..</p>
+            <h1 class="intro__caption wow fadeInLeft" data-wow-duration="1s">Хотите жить <br> в Израиле?</h1>
+            <p class="desc wow fadeInLeft" data-wow-duration="1.5s">У Вас есть еврейские, польские, немецкие корни? <br>
+              Тогда мои услуги - для Вас! <br>
+              Поиск архивных документов, подтверждающих национальность!</p>
           </div>
           <div class="intro__count">
             <div class="intro__countItem wow fadeInUp">
@@ -396,11 +386,10 @@
           <form method="post" class="form">
 
             <!-- Hidden Required Fields -->
-            <input type="hidden" name="Sumirina" value="Site Name">
-            <input type="hidden" name="Ирина" value="250296a@gmail.com">
+            <input type="hidden" name="project_name" value="Site Name">
+            <input type="hidden" name="admin_email" value="akmal.k@adver.kg">
             <input type="hidden" name="form_subject" value="Form Subject">
             <!-- END Hidden Required Fields -->
-
             <div class="row">
               <div class="col-lg-4">
                 <label for="name">Имя</label>
@@ -420,35 +409,11 @@
               </div>
               <div class="col-lg-4">
                 <label for="country">Ваша страна</label>
-                <select id="country" name="Cтрана" class="form-control">
-                  <option value="Россия">Россия</option>
-                  <option value="Кыргызстан">Кыргызстан</option>
-                  <option value="Казахстан">Казахстан</option>
-                  <option value="Узбекистан">Узбекистан</option>
-                  <option value="Туркменистан">Туркменистан</option>
-                  <option value="Таджикистан">Таджикистан</option>
-                  <option value="Армения">Армения</option>
-                  <option value="Белоруссия">Белоруссия</option>
-                  <option value="Молдавия">Молдавия</option>
-                  <option value="Азербайджан">Азербайджан</option>
-                  <option value="Грузия">Грузия</option>
-                </select>
+                <input id="country" name="Страна" type="text" class="form__input" placeholder="Россия">
               </div>
               <div class="col-lg-4">
                 <label for="cityTown">Ваш город</label>
-                <select id="cityTown" name="Город" class="form-control">
-                  <option value="Москва">Москва</option>
-                  <option value="Бишкек">Бишкек</option>
-                  <option value="Астана">Астана</option>
-                  <option value="Ташкент">Ташкент</option>
-                  <option value="Ашхабад">Ашхабад</option>
-                  <option value="Душанбе">Душанбе</option>
-                  <option value="Ереван">Ереван</option>
-                  <option value="Минск">Минск</option>
-                  <option value="Кишинёв">Кишинёв</option>
-                  <option value="Баку">Баку</option>
-                  <option value="Тбилиси">Тбилиси</option>
-                </select>
+                <input id="cityTown" name="Город" type="text" class="form__input" placeholder="Москва">
               </div>
               <div class="col-lg-6">
                 <label for="relationship">Есть ли документы, подтверждающие национальность?</label>
@@ -514,6 +479,20 @@
 
     </footer>
     <!-- footer end -->
+
+
+    <!-- modal window -->
+    <div class="modalWindowWrap">
+      <div class="modal">
+        <div class="modalWindow">
+          <h1>Спасибо!</h1>
+          <p>Мы свяжемся с Вами в ближайшее время.</p>
+        </div>
+      </div>
+    </div>
+    <!-- modal window end -->
+
+
 
   </div>
   <!-- contentWrap end -->
