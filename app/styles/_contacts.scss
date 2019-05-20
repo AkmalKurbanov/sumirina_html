@@ -47,7 +47,7 @@
 
         li {
           position: relative;
-
+          margin-bottom: 10px;
           &:last-child {
             margin-top: 20px;
 
@@ -71,7 +71,8 @@
             }
           }
 
-          .icon-mobile {
+          .icon-whatsapp,
+          .icon-telegram{
             font-size: 22px;
 
             @media (max-width: 400.98px) {
